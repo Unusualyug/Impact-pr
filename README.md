@@ -1,4 +1,4 @@
-# Phonebook Application
+# Phonebook Web
 
 ## Introduction
 
