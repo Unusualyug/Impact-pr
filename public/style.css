@@ -1,0 +1,334 @@
+/* General Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Main Content Area */
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Title Styling */
+h1,
+h2 {
+  color: #007bff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Contact List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+li button {
+  background-color: #e53935;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #d32f2f;
+}
+
+/* Form Styling */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Add Contact Button Styling */
+.add-contact-btn {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.add-contact-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Links Styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Search and Sort Pages Styling */
+.search-results,
+.sorted-contacts {
+  margin-top: 30px;
+}
+
+.search-results ul,
+.sorted-contacts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-results li,
+.sorted-contacts li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-results li a,
+.sorted-contacts li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.search-results li a:hover,
+.sorted-contacts li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    font-size: 24px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .add-contact-btn {
+    font-size: 14px;
+  }
+}
+
+/* General Button Styling */
+button,
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active,
+input[type="submit"]:active {
+  background-color: #003f8c;
+  transform: translateY(2px);
+}
+
+/* Specific Button Colors for Add, Edit, and Delete */
+button.add-btn,
+input[type="submit"].add-btn {
+  background-color: #28a745;
+}
+
+button.add-btn:hover,
+input[type="submit"].add-btn:hover {
+  background-color: #218838;
+}
+
+button.add-btn:active,
+input[type="submit"].add-btn:active {
+  background-color: #1e7e34;
+}
+
+button.delete-btn,
+input[type="submit"].delete-btn {
+  background-color: #dc3545;
+}
+
+button.delete-btn:hover,
+input[type="submit"].delete-btn:hover {
+  background-color: #c82333;
+}
+
+button.delete-btn:active,
+input[type="submit"].delete-btn:active {
+  background-color: #bd2130;
+}
+
+button.edit-btn,
+input[type="submit"].edit-btn {
+  background-color: #ffc107;
+}
+
+button.edit-btn:hover,
+input[type="submit"].edit-btn:hover {
+  background-color: #e0a800;
+}
+
+button.edit-btn:active,
+input[type="submit"].edit-btn:active {
+  background-color: #d39e00;
+}
+
+/* Small Buttons for Inline Actions */
+button.inline-btn,
+input[type="submit"].inline-btn {
+  padding: 5px 15px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+/* Submit Button Styling in Forms */
+form button,
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+}
+
+/* Styling buttons inside a list item */
+button,
+a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+button.delete-btn,
+button.edit-btn,
+a.edit-btn {
+  padding: 5px 10px;
+}
+
+button.delete-btn,
+a.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.delete-btn:hover,
+a.delete-btn:hover {
+  background-color: #c82333;
+}
+
+button.delete-btn:active,
+a.delete-btn:active {
+  background-color: #bd2130;
+}
+
+button.edit-btn,
+a.edit-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+button.edit-btn:hover,
+a.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+button.edit-btn:active,
+a.edit-btn:active {
+  background-color: #d39e00;
+}

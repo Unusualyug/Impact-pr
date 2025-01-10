@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorted Contacts</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sorted Contacts</h1>
+      <ul class="contact-list">
+        <% contacts.forEach(contact => { %>
+        <li class="contact-item">
+          <span class="contact-name"><%= contact.name %></span> -
+          <span class="contact-phone"><%= contact.phone %></span>
+        </li>
+        <% }) %>
+      </ul>
+
+      <a href="/contact" class="btn btn-back">Back to Contacts</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonebook App</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Phonebook App</h1>
+    <h2>Contacts</h2>
+
+    <ul>
+      <% contacts.forEach(contact => { %>
+      <li>
+        <%= contact.name %> - <%= contact.phone %>
+        <a href="/edit/<%= contact._id %>">Edit</a> |
+        <form
+          action="/api/contacts/<%= contact._id %>/delete"
+          method="POST"
+          style="display: inline"
+        >
+          <input type="hidden" name="_method" value="DELETE" />
+          <button type="submit">Delete</button>
+        </form>
+      </li>
+      <% }) %>
+    </ul>
+
+    <a href="/add">Add New Contact</a>
+    <a href="/search">Search Contacts</a>
+    <a href="/sort">Sort Contacts</a>
+  </body>
+</html>
