@@ -41,29 +41,53 @@ This Phonebook Application provides an intuitive interface that allows users to 
 
 1. **Add Contact:**
    - Input validation checks are performed to ensure the name and phone number are valid.
+  
+   - Example : ![image](https://github.com/user-attachments/assets/3d69abaa-0c97-4d2b-9e8b-a7a1ae7c6388)
+
    - The contact is inserted into the MongoDB database if the contact name or phone number does not already exist.
+  
+   - Example : ![image](https://github.com/user-attachments/assets/caee4440-9bed-4c2d-aae4-58f41b8cfcc6)
 2. **Delete Contact:**
 
    - The user specifies a contact's name to delete.
+  
+   - Example : before delete the contact list
+   - ![image](https://github.com/user-attachments/assets/8b07f2e8-7fbb-43d4-b736-313ca118672f)
+
+      after perform the operation contact list
+     ![image](https://github.com/user-attachments/assets/2379552e-fbc5-410c-96fb-6d75a7d50c50)
+
    - The application checks whether the contact exists in the database, and if found, it is removed.
 
 3. **Edit Contact:**
 
    - Users provide the old contact name along with the new name and phone number.
-   - The application checks if the contact exists and updates the information.
+  
+   - Examplpe ==> before update the contact number
+   - ![image](https://github.com/user-attachments/assets/56027ad2-87f2-416b-a02d-2713a2013084)
 
-4. **Search Contact:**
+   after update the contact:
+   ![image](https://github.com/user-attachments/assets/36f7407b-1418-4a7b-87bb-550dbe5bbad4)
+
+   - The application checks if the contact exists and updates the information.
+5. **Search Contact:**
 
    - Users can enter a search term, and the application uses a case-insensitive regular expression search in MongoDB to find matching contacts.
+   Example :
+![image](https://github.com/user-attachments/assets/ad8e9adf-24cc-4055-94c0-99da91b89ee1)
+now click on search button
 
-5. **Sort Contacts:**
+![image](https://github.com/user-attachments/assets/533498a1-c1b8-4e70-860d-53a64887fd57)
+
+6. **Sort Contacts:**
 
    - The contacts are sorted based on either the name or the phone number field using MongoDB's built-in sorting functionality.
+   Example :
+   --click on sort by name button
+     output : ![image](https://github.com/user-attachments/assets/040beb71-1964-43bc-bf3c-59e0b63dcfe2)
 
-6. **Toggle Contacts:**
-   - The user can toggle between showing all contacts and hiding them.
-
-## Output
+7. **Show All Contacts:**
+   - The user can between showing all contacts and with all insertin or deletion operations...
 
 The application displays a GUI with the following functionality:
 
@@ -93,13 +117,22 @@ New Phone Number (for Edit): [__]
 
 ---
 
-## Error: [____]
+finalUI ==> ![image](https://github.com/user-attachments/assets/8b2410b1-9488-4c88-945a-6cff855400a2)
 
-## How to Run
+## How to Run 
 
 1. Clone the repository to your local machine.
 2. Ensure that you have Python 3.x and MongoDB installed.
 3. Install the necessary dependencies:
 
-pip install pymongo pip install tkinter 4. Start your MongoDB server. 5. Run the `phonebook.py` file:
+pip install pymongo pip install tkinter 
+
+4. Start your MongoDB server.
+5. 5. Run the `phonebook.py` file:
+
+
+## Also run the code using html, css and javascript (frontend-backend)
+
+output ==> 
+
 
