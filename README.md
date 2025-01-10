@@ -103,6 +103,3 @@ New Phone Number (for Edit): [__]
 
 pip install pymongo pip install tkinter 4. Start your MongoDB server. 5. Run the `phonebook.py` file:
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
