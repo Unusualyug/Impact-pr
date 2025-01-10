@@ -133,6 +133,86 @@ pip install pymongo pip install tkinter
 
 ## Also run the code using html, css and javascript (frontend-backend)
 
-output ==> 
+# Phonebook Application
+
+## Introduction
+The Phonebook Application is a simple web-based application that allows users to manage their contacts. It is built using **Node.js** and **MongoDB** to provide a full CRUD (Create, Read, Update, Delete) functionality for contacts. Users can add new contacts, edit existing ones, delete contacts, and search or sort contacts by name.
+
+## Problem
+Managing contacts can be cumbersome without an easy-to-use interface for storing, retrieving, and updating contact information. Traditional methods, like paper-based systems or simple spreadsheets, can become inefficient and error-prone, especially as the number of contacts grows.
+
+This application addresses the problem by providing an intuitive, web-based platform where users can easily store and manage their contacts.
+
+## Solution
+The Phonebook Application is built using **Express.js** to handle backend logic and **MongoDB** to store contact data. The application allows users to:
+
+- View all contacts
+- Add new contacts
+- Edit existing contacts
+- Delete contacts
+- Search contacts by name
+- Sort contacts alphabetically
+
+The application has a simple, clean user interface powered by **EJS** templating engine, making it easy to display contact data dynamically.
+
+## Technologies Used
+- **Node.js**: JavaScript runtime used for building the server-side application.
+- **Express.js**: Web application framework for Node.js that simplifies routing and middleware integration.
+- **MongoDB**: NoSQL database used to store contact data.
+- **Mongoose**: ODM (Object Data Modeling) library for MongoDB used to interact with the database.
+- **EJS**: Templating engine used to render dynamic HTML pages.
+- **Body-Parser**: Middleware used to parse incoming request bodies, especially for form submissions.
+- **CORS**: Middleware to enable Cross-Origin Resource Sharing, allowing the frontend to make requests to the server from a different domain.
+
+## Algorithm
+1. **Create a Contact**: A user submits the contact form. The form data is captured and stored in the MongoDB database.
+2. **Read Contacts**: On the homepage, all stored contacts are retrieved from the database and displayed in a list.
+3. **Update a Contact**: A user can select a contact to edit. The contact details are retrieved from the database, displayed in an editable form, and then updated upon submission.
+4. **Delete a Contact**: A user can delete a contact. The selected contact is removed from the MongoDB database.
+5. **Search Contacts**: A user can search for contacts by name. The application filters contacts that match the search query.
+6. **Sort Contacts**: A user can view contacts sorted by name in ascending order.
+
+## Output
+
+### Homepage:
+Displays all contacts stored in the database. Users can view the list of contacts with options to edit or delete them.
+
+### Add Contact Form:
+A form where users can input a new contact's name and phone number.
+
+### Edit Contact Form:
+A form pre-filled with the contact's current details, allowing users to modify and save changes.
+
+
+### Screenshots:
+
+1. **Home Screen** – Displays a list of all contacts.
+   - Contact name and phone number displayed with options to edit or delete.
+![image](https://github.com/user-attachments/assets/7c768941-bc8b-40c3-8e0f-4b2c0b57828b)
+
+2. **Add Contact Form** – Form to input a new contact's name and phone number.
+![image](https://github.com/user-attachments/assets/50457e3c-db42-433f-a03b-7e95592853e2)
+
+Output ==>
+![image](https://github.com/user-attachments/assets/72ec7440-c018-4ef8-a5f3-8fd078bc8bde)
+
+
+3. **Edit Contact Form** – Form that allows users to modify a contact's details.
+![image](https://github.com/user-attachments/assets/829ca155-9dd9-4bec-8770-c7bfb756f141)
+
+after update ++>
+![image](https://github.com/user-attachments/assets/f5ddfc9e-8ab2-425e-8b74-0ff2c88ee4f5)
+
+---
+
+## Getting Started
+
+### Prerequisites
+To run this project, you will need:
+- **Node.js** installed (https://nodejs.org/)
+- **MongoDB** installed locally or use a cloud MongoDB service (https://www.mongodb.com/try/download/community)
+
+https://github.com/Unusualyug/Impact-pr
+
 
 
